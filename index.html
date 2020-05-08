@@ -1,21 +1,500 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title></title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
 
-    <title>Document</title>
+    <!-- HOSTED -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/mdi/css/materialdesignicons.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
   </head>
   <body>
-    <img src="resumeImg.png" alt="Resume" />
-    <h2>
-      <a href="https://where-ya-goin.herokuapp.com/users">Where Ya Goin</a>
-    </h2>
-    <img src="whereyagoin.png" alt="Where Ya Goin" />
-    <h2><a href="https://get-it-ticket.herokuapp.com/" :>Get It Ticket</a></h2>
-    <img src="getitticket.png" alt="Get It Ticket" />
-    <h2><a href="https://coastr-app.herokuapp.com/">Coastr</a></h2>
-    <img src="coastr.png" alt="Coastr" />
+    <div class="overflow-wrap">
+      <!-- HOME -->
+      <div class="modal-wrap flex">
+        <div class="mask"></div>
+        <div class="modal" id="modal">
+          <div class="carousel-wrap">
+            <div class="window">
+              <div id="carousel">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+              </div>
+              <i class="mdi mdi-chevron-left" id="prev"></i>
+              <i class="mdi mdi-chevron-right" id="next"></i>
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="title"></div>
+            <div class="tag"></div>
+            <div class="detail"></div>
+            <a href="#" target="_blank"
+              ><div class="button">
+                <i class="mdi mdi-open-in-new"></i>VIEW SITE
+              </div></a
+            >
+          </div>
+          <i class="close mdi mdi-close"></i>
+        </div>
+      </div>
+
+      <section id="home" class="flex height-fix">
+        <div id="pt" class="canvas"></div>
+        <div class="flex">
+          <div class="text">
+            Hello, I'm <span class="highlight">Trey Shuldberg</span>.
+            <br />
+            I'm a full-stack web developer.
+          </div>
+
+          <div class="button page-link" dest="about">
+            View my work <i class="mdi mdi-arrow-right"></i>
+          </div>
+
+          <nav class="flex">
+            <div class="link-wrap">
+              <div class="active page-link" dest="home">home</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="portfolio">portfolio</div>
+              <div class="page-link" dest="blog">blog</div>
+              <div class="page-link" dest="contact">contact</div>
+            </div>
+            <i class="mdi mdi-menu"></i>
+          </nav>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">
+            ABOUT
+          </div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-left"
+            data-delay=".5s"
+          ></div>
+
+          <div class="flex row label-wrap">
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap">
+                <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                  <div class="hexagon">
+                    <i class="mdi mdi-speedometer"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in">
+                  <div class="label bold">Speed</div>
+                  <div>
+                    Fast load times and lag free interaction, my highest
+                    priority.
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex bullet-wrap">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".2s"
+                >
+                  <div class="hexagon">
+                    <i class="mdi mdi-cellphone-link"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                  <div class="label bold">Responsive</div>
+                  <div>My layouts will work on any device, big or small.</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".4s"
+                >
+                  <div class="hexagon">
+                    <i class="mdi mdi-lightbulb-outline"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                  <div class="label bold">Intuitive</div>
+                  <div>Strong preference for easy to use, intuitive UX/UI.</div>
+                </div>
+              </div>
+
+              <div class="flex bullet-wrap">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".6s"
+                >
+                  <div class="hexagon">
+                    <i class="mdi mdi-rocket"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                  <div class="label bold">Dynamic</div>
+                  <div>
+                    Websites don't have to be static, I love making pages come
+                    to life.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-wrapper flex row-gt-sm">
+            <div
+              class="flex flex-50-gt-sm waypoint"
+              data-animation="slide-in-left"
+            >
+              <img src="img/me.png" class="me" />
+              <div class="label bold">Who's Trey?</div>
+              <div>
+                I'm a Full-Stack Developer looking to join a team. Currently
+                living in San Diego, CA - but completely open to moving.
+                <br />
+                -----
+                <br />
+                <span class="page-link highlight" dest="contact"
+                  >Want to talk?</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex flex-50-gt-sm waypoint bars-wrap"
+              data-animation="slide-in-right"
+            >
+              <div class="bar flex">
+                <div class="bar fill" style="width: 80%;">
+                  <div class="tag bold flex">JavaScript</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 80%;">
+                  <div class="tag bold flex">HTML</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 70%;">
+                  <div class="tag bold flex">CSS</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 65%;">
+                  <div class="tag bold flex">REACT</div>
+                </div>
+                <span>65%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 65%;">
+                  <div class="tag bold flex">Django</div>
+                </div>
+                <span>65%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 65%;">
+                  <div class="tag bold flex">Python</div>
+                </div>
+                <span>65%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 65%;">
+                  <div class="tag bold flex">Node.js</div>
+                </div>
+                <span>65%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 50%;">
+                  <div class="tag bold flex">C++</div>
+                </div>
+                <span>50%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 45%;">
+                  <div class="tag bold flex">Ruby On Rails</div>
+                </div>
+                <span>45%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="flex" id="portfolio">
+        <div class="header waypoint" data-animation="slide-in-right">
+          PROJECTS
+        </div>
+        <div
+          class="header-bar waypoint"
+          data-animation="slide-in-right"
+          data-delay=".3s"
+        ></div>
+
+        <div class="filter-wrap waypoint" data-animation="fade-in">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".rails">Python/Django</div>
+            <div class="filter" data-filter=".react">REACT-JS</div>
+            <div class="filter" data-filter=".js">JAVASCRIPT</div>
+          </div>
+          <div class="float-bar">
+            <div class="flex row">
+              <div class="filter" data-filter="all">ALL</div>
+              <div class="filter" data-filter=".rails">Python/Django</div>
+              <div class="filter" data-filter=".react">REACT-JS</div>
+              <div class="filter" data-filter=".js">JAVASCRIPT</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="gallery" class="container flex row wrap waypoint">
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Where Ya Goin</div>
+                <span class="highlight">JavaScript / Express.js / Node.js / MongoDB</span>
+              </div>
+              <div class="button" id="travel">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix react" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Coastr</div>
+                <span class="highlight">React JS </span>
+              </div>
+              <div class="button" id="drinking">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix rails" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Get It Ticket</div>
+                <span class="highlight">Python / Django / JavaScript</span>
+              </div>
+              <div class="button" id="entertainment">LEARN MORE</div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Battleship</div>
+                <span class="highlight">JavaScript</span>
+              </div>
+              <div class="button" id="battleship">LEARN MORE</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- BLOG -->
+      <section id="blog">
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">BLOG</div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-left"
+            data-delay=".5s"
+          ></div>
+
+          <div class="flex row wrap">
+            <div class="flex row-gt-sm">
+              <a
+                href="https://medium.com/@tshuldberg999/browser-battleship-javascript-player-vs-cpu-w-smart-cpu-guessing-part-1-fe7d7e4b4ef7"
+                target="_blank"
+              >
+                <div class="blog-wrap waypoint" data-animation="fade-in">
+                  <div class="fade-wrap">
+                    <div class="thumb" id="thumb-1"></div>
+                    <div class="label bold">Browser BattleShip W/ CPU Guessing</div>
+                    <div class="date">MARCH 10, 2020</div>
+                    <div class="bar"></div>
+                    <div class="text">
+                      A walkthrough of my in browser BattleShip with smart CPU.
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://medium.com/@tshuldberg999/react-how-state-cascades-to-children-through-props-76415da4e3b6"
+                target="_blank"
+              >
+                <div
+                  class="blog-wrap waypoint"
+                  data-animation="fade-in"
+                  data-delay=".2s"
+                >
+                  <div class="fade-wrap">
+                    <div class="thumb" id="thumb-2"></div>
+                    <div class="label bold">
+                      React: A Discussion on state.
+                    </div>
+                    <div class="date">APRIL 6, 2020</div>
+                    <div class="bar"></div>
+                    <div class="text">
+                      Understanding of how props move around throughout the React architecture is at the base of understanding React as a whole.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="flex row-gt-sm">
+          
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <svg
+          preserveAspectRatio="none"
+          viewBox="0 0 100 102"
+          height="75"
+          width="100%"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svgcolor-light"
+        >
+          <!-- <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path> -->
+        </svg>
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">
+            CONTACT
+          </div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-right"
+            data-delay=".25s"
+          ></div>
+          <div
+            class="highlight waypoint"
+            data-animation="slide-in-right"
+            data-delay=".5s"
+          >
+            Want to talk?
+          </div>
+          <form
+            class="waypoint"
+            data-animation="pop-in"
+            data-delay=".5s"
+            id="contact-form"
+          >
+            <input placeholder="Name" type="text" name="name" required />
+            <input
+              placeholder="Enter email"
+              type="email"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              type="text"
+              name="message"
+            ></textarea>
+            <div id="success">
+              <div>
+                Your message was sent successfully. Thanks!<span
+                  id="close"
+                  class="mdi mdi-close"
+                ></span>
+              </div>
+            </div>
+            <input class="button" type="submit" id="submit" value="SUBMIT" />
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+        <div class="icon-wrap flex row">
+          <a href="https://www.linkedin.com/in/trey-shuldberg-b6a80757/">
+            <div class="flex icon" id="icon-2">
+              <i class="mdi mdi-linkedin"></i>
+            </div>
+          </a>
+          <a href="https://medium.com/@tshuldberg999">
+            <div class="flex icon" id="icon-5">
+              <i class="mdi mdi-medium"></i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="footnote">
+            TREY SHULDBERG <span class="highlight">&copy;2020</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="preload">
+      <img src="img/me.png" />
+      <img src="img/filler.jpg" />
+      <img src="img/thumb-1.jpg" />
+      <img src="img/thumb-2.jpg" />
+      <img src="img/thumb-3.jpg" />
+      <img src="img/thumb-4.jpg" />
+      <img src="img/blog-1.jpg" />
+      <img src="img/blog-2.jpg" />
+    </div>
   </body>
 </html>
+
+<script src="scripts/canvas.js"></script>
