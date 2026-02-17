@@ -1,32 +1,47 @@
 $(document).ready(function () {
   // MODAL
   var modalText = {
-    travel: {
-      title: "Where Ya Goin",
-      tag: "TRAVEL BLOG.",
+    receeps: {
+      title: "Receeps",
+      tag: "RECEIPT WORKFLOW AUTOMATION.",
       detail:
-        "Travel blog to create posts about the places this world has to offer and to share those experiences with the world.",
-      link: "https://github.com/tshuldberg/Travel",
+        "Receeps streamlines expense capture and reconciliation with a Django + React architecture, integrating OCR pipelines, role-based controls, and cloud deployment for team-scale workflows.",
+      link: "https://github.com/tshuldberg/receeps",
     },
-    drinking: {
-      title: "Coastr",
-      tag: "ONLINE DRINK ORDERING.",
+    marlin: {
+      title: "The Marlin Traders",
+      tag: "TRADING AND ANALYTICS PLATFORM.",
       detail:
-        "An ordering service for high influx bars and clubs to allow customers to order from the dance floor.",
-      link: "https://coastr-app.herokuapp.com/",
+        "A modern trading platform built with Next.js and tRPC, paired with PostgreSQL-backed analytics and companion mobile workflows to keep portfolio actions fast and reliable.",
+      link: "https://github.com/tshuldberg/the-marlin-traders",
     },
-    entertainment: {
-      title: "Get It Ticket",
-      tag: "TICKET REDISTRIBUTION.",
+    easystreet: {
+      title: "EasyStreet",
+      tag: "NATIVE IOS NAVIGATION.",
       detail:
-        "Get It Ticket is an online source for event and concert ticket purchasing that will prevent sclaping and allow for easy resale of tickets in a pinch.",
-      link: "https://get-it-ticket.herokuapp.com/",
+        "Native iOS app using Swift, UIKit, and MapKit to deliver location-aware experiences with a local SQLite store, optimized for responsiveness and low-friction daily use.",
+      link: "https://github.com/tshuldberg/easystreet-ios",
     },
-    battleship: {
-      title: "Browser Battleship",
-      tag: "BATTLESHIP GAME",
-      detail: "An in browser BattleShip game with smart CPU guessing.",
-      link: "https://tshuldberg.github.io/Battleship-JS/",
+    easystreetmono: {
+      title: "EasyStreet Cross-Platform",
+      tag: "MONOREPO MOBILE + WEB SUITE.",
+      detail:
+        "Cross-platform evolution of EasyStreet using Expo, Next.js, Convex, and Turborepo for shared logic, rapid iteration, and cohesive product behavior across devices.",
+      link: "https://github.com/tshuldberg/easystreet-cross-platform",
+    },
+    myvoice: {
+      title: "MyVoice",
+      tag: "ON-DEVICE VOICE WORKFLOWS.",
+      detail:
+        "MyVoice is a macOS-first TypeScript app that integrates whisper.cpp for private local transcription and developer-friendly automation hooks for fast voice-to-action flows.",
+      link: "https://github.com/tshuldberg/myvoice",
+    },
+    macoshub: {
+      title: "macOS Hub",
+      tag: "LOCAL AI AUTOMATION CENTER.",
+      detail:
+        "TypeScript-based command center that connects MCP SDK services with AppleScript automations, enabling contextual desktop workflows and AI-assisted system orchestration.",
+      link: "https://github.com/tshuldberg/macos-hub",
     },
   };
 
