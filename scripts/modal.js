@@ -22,13 +22,6 @@ $(document).ready(function () {
         "Native iOS app using Swift, UIKit, and MapKit to deliver location-aware experiences with a local SQLite store, optimized for responsiveness and low-friction daily use.",
       link: "https://github.com/tshuldberg/EasyStreet",
     },
-    easystreetmono: {
-      title: "EasyStreet Cross-Platform",
-      tag: "MONOREPO MOBILE + WEB SUITE.",
-      detail:
-        "Cross-platform evolution of EasyStreet using Expo, Next.js, Convex, and Turborepo for shared logic, rapid iteration, and cohesive product behavior across devices.",
-      link: "https://github.com/tshuldberg/easystreet-monorepo",
-    },
     myvoice: {
       title: "MyVoice",
       tag: "ON-DEVICE VOICE WORKFLOWS.",
