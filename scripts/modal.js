@@ -6,35 +6,35 @@ $(document).ready(function () {
       tag: "RECEIPT WORKFLOW AUTOMATION.",
       detail:
         "Receeps streamlines expense capture and reconciliation with a Django + React architecture, integrating OCR pipelines, role-based controls, and cloud deployment for team-scale workflows.",
-      link: "https://github.com/tshuldberg/receeps",
+      link: "https://github.com/cedricholz/receipts",
     },
     marlin: {
       title: "The Marlin Traders",
       tag: "TRADING AND ANALYTICS PLATFORM.",
       detail:
         "A modern trading platform built with Next.js and tRPC, paired with PostgreSQL-backed analytics and companion mobile workflows to keep portfolio actions fast and reliable.",
-      link: "https://github.com/tshuldberg/the-marlin-traders",
+      link: "https://github.com/tshuldberg/TheMarlinTraders",
     },
     easystreet: {
       title: "EasyStreet",
       tag: "NATIVE IOS NAVIGATION.",
       detail:
         "Native iOS app using Swift, UIKit, and MapKit to deliver location-aware experiences with a local SQLite store, optimized for responsiveness and low-friction daily use.",
-      link: "https://github.com/tshuldberg/easystreet-ios",
+      link: "https://github.com/tshuldberg/EasyStreet",
     },
     easystreetmono: {
       title: "EasyStreet Cross-Platform",
       tag: "MONOREPO MOBILE + WEB SUITE.",
       detail:
         "Cross-platform evolution of EasyStreet using Expo, Next.js, Convex, and Turborepo for shared logic, rapid iteration, and cohesive product behavior across devices.",
-      link: "https://github.com/tshuldberg/easystreet-cross-platform",
+      link: "https://github.com/tshuldberg/easystreet-monorepo",
     },
     myvoice: {
       title: "MyVoice",
       tag: "ON-DEVICE VOICE WORKFLOWS.",
       detail:
         "MyVoice is a macOS-first TypeScript app that integrates whisper.cpp for private local transcription and developer-friendly automation hooks for fast voice-to-action flows.",
-      link: "https://github.com/tshuldberg/myvoice",
+      link: "https://github.com/tshuldberg/MyVoice",
     },
     macoshub: {
       title: "macOS Hub",
